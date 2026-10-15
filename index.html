@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Myeonhu Kim — Mathematics, Princeton University">
+	<title>Myeonhu Kim</title>
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+
+	<style>
+	  :root {
+		  color-scheme: light;
+			--text: #232323;
+			--link: #35597d;
+			--link-hover: #1f3d5c;
+			--border: #c6c6c6;
+			--muted: #6b6a66;
+		}
+
+		* { box-sizing: border-box; }
+
+		html { background: #fff; }
+
+		body {
+			margin: 0;
+			font-family: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+			font-size: 24px;
+			line-height: 1.6;
+			font-kerning: normal;
+			text-rendering: optimizeLegibility;
+			color: var(--text);
+			background: #fff;
+		}
+
+		main {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 45px 34px 80px;
+		}
+
+		h1 {
+			font-size: 48px;
+			font-weight: 500;
+			line-height: 1.15;
+			letter-spacing: -0.02em;
+			margin: 0 0 30px;
+		}
+
+		h2 {
+			font-size: 26px;
+			font-weight: 500;
+			line-height: 1.3;
+			margin: 42px 0 16px;
+		}
+
+		p { margin: 0 0 17px; }
+
+		a {
+			color: var(--link);
+			text-decoration: underline;
+			text-decoration-thickness: 1px;
+			text-underline-offset: 2px;
+		}
+		a:hover { color: var(--link-hover); }
+		a:focus-visible, summary:focus-visible {
+			outline: 2px solid var(--link);
+			outline-offset: 3px;
+		}
+
+		ol { margin: 6px 0 25px; padding-left: 32px; }
+		li { padding-left: 4px; margin-bottom: 23px; }
+
+		.paper-status { color: var(--muted); }
+
+		details.abstract { margin-top: 8px; font-size: 17px; }
+		details.abstract > summary {
+			display: inline-block;
+			border: 1px solid var(--border);
+			border-radius: 5px;
+			padding: 1px 10px;
+			background: #f8f8f8;
+			color: #303030;
+			font-size: 15px;
+			line-height: 1.6;
+			cursor: pointer;
+			user-select: none;
+			list-style: none;
+		}
+		details.abstract > summary::-webkit-details-marker { display: none; }
+		details.abstract[open] > summary { background: #f0f0f0; }
+		.abstract-content {
+			margin-top: 9px;
+			max-width: 760px;
+			padding: 9px 13px;
+			border-left: 2px solid #dedede;
+			font-size: 17px;
+			line-height: 1.6;
+		}
+		.abstract-content p:last-child { margin-bottom: 0; }
+
+		details.miscellaneous { margin-top: 43px; }
+		details.miscellaneous > summary {
+			font-size: 26px;
+			font-weight: 500;
+			line-height: 1.3;
+			cursor: pointer;
+		}
+		details.miscellaneous > p {
+			margin: 15px 0 0 26px;
+		}
+
+		@media (max-width: 650px) {
+			body { font-size: 18px; }
+			main { padding: 28px 20px 55px; }
+			h1 { font-size: 39px; margin-bottom: 25px; }
+			h2 { font-size: 24px; margin-top: 35px; }
+			ol { padding-left: 27px; }
+			details.miscellaneous > summary { font-size: 24px; }
+		}
+	</style>
+
+	<script>
+		window.MathJax = {
+			tex: {
+				inlineMath: [['\\(', '\\)'], ['$', '$']],
+				displayMath: [['\\[', '\\]'], ['$$', '$$']]
+			},
+			options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+	    };
+	</script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+	<main>
+		<h1>Myeonhu Kim</h1>
+
+		<p>
+			I am a fifth and final-year Ph.D. student in mathematics at
+			<a href="https://www.princeton.edu/">Princeton University</a>.
+			I'm interested in algebraic geometry and commutative algebra, especially singularities in positive and mixed characteristics.
+		</p>
+
+		<p>
+			I'm on the job market this academic year. Here is my <a href="CV_Myeonhu Kim.pdf">CV</a>.
+		</p>
+
+		<p>Email: <a href="mailto:myeonhuk@princeton.edu">myeonhuk@princeton.edu</a></p>
+
+		<section aria-labelledby="research-heading">
+			<h2 id="research-heading">Research</h2>
+			<ol>
+				<li>
+					A Kunz-type theorem for quasi-<em>F</em>-singularities.
+					<span class="paper-status">(In preparation.)</span>
+					<details class="abstract">
+						<summary>Abstract</summary>
+						<div class="abstract-content">
+							<p>We establish an analogue and generalization of Kunz’s classical regularity criterion using the Witt Frobenius on truncated Witt rings.</p>
+						</div>
+					</details>
+				</li>
+				<li>
+					The Witt&ndash;Hilbert&ndash;Kunz multiplicity and the relative quasi-<em>F</em>-rational signature.
+					<span class="paper-status">(In preparation.)</span>
+					<details class="abstract">
+						<summary>Abstract</summary>
+						<div class="abstract-content">
+							<p>We develop the theory of <em>n</em>-Witt&ndash;Hilbert&ndash;Kunz multiplicity and relative <em>n</em>-quasi-<em>F</em>-rational signature, generalizing the classical notions of Hilbert&ndash;Kunz multiplicity and relative <em>F</em>-rational signature.</p>
+						</div>
+					</details>
+				</li>
+			</ol>
+		</section>
+
+		<details class="miscellaneous">
+			<summary>Miscellaneous</summary>
+			<p>
+				<a href="moduli-and-stacks.html">Moduli and Stacks Learning Seminar</a>.
+			</p>
+		</details>
+	</main>
+</body>
+</html>
